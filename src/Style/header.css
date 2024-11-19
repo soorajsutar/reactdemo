@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image */
+.background {
+    background-image: url('../assets/banner.jpg'); /* Replace with your stars image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent background */
+    color: white;
+}
+
+/* Logo styling */
+.navbar .logo {
+    height: 40px; /* Size of the Google logo */
+}
+
+/* Centered Navbar Links */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-grow: 1; /* Allow the links to take up remaining space */
+    opacity: 0.5;
+}
+
+.nav-links li {
+    margin-left: 100px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Hover effect */
+}
+
+/* Info box centered in the middle of the background image */
+.info-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+}
+
+.info-box h1 {
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.info-box h2 {
+    color: rgb(250, 253, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.info-box p {
+    color:aliceblue;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Styling for the Send Enquiry button */
+.send-enquiry-btn {
+    padding: 10px 20px; /* Add some space inside the button */
+    background-color: #ffcc00; /* Yellow color */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px; /* Set text size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for the button */
+.send-enquiry-btn:hover {
+    background-color: #f0b800; /* Slightly darker yellow on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+}
+
+/* Optional: Add focus styles */
+.send-enquiry-btn:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.8); /* Add a glowing yellow effect on focus */
+}
+
+

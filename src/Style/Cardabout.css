@@ -1,0 +1,73 @@
+
+  /* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  } */
+   .card h1{
+    display: inline-block; /* Needed to control width */
+    position: relative;
+   }
+   .card h1::after{
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: -3px; /* Adjust distance from the text */
+    left: 0;
+    width: 5%; /* Set the length of the underline (50% of the text width) */
+    height: 2px; /* Underline thickness */
+    background-color: #dff709; /* Custom underline color */
+   }
+
+  .underline h1{
+    display: inline-block; /* Needed to control width */
+    position: relative;
+ 
+  }
+  .underline h1::after{
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: -3px; /* Adjust distance from the text */
+    left: 0;
+    width: 20%; /* Set the length of the underline (50% of the text width) */
+    height: 2px; /* Underline thickness */
+    background-color: #dff709; /* Custom underline color */
+  }
+  .containers {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .cards {
+    width: 45vw;
+    height: 300px;
+    background-color: #ce8321b4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cards-contents {
+    text-align: center;
+  }
+  
+  .h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
